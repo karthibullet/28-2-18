@@ -1,20 +1,19 @@
 
 #include<stdio.h>
-#include<math.h>
-int main(void)
+#include<string.h>
+int main()
 {
-int a,b,mul;
-scanf("%d %d",&a,&b);
-mul=a*b;
-int i,count=0;
-for(i=0;;i++)
-{
-if(mul==pow(i,2))
-count++;
-}
-if(count!=0)
-printf("yes");
-else
-printf("no");
-return 0;
+  int a,b,i,n,count=0;
+  printf("enter two numbers");
+  scanf("%d%d",&a,&b);
+  n=a*b;
+  for(i=1;i<=n;i++)
+  {
+      if(i*i==n)
+      count++;
+  }
+  if(count>=1)
+  printf("perfect");
+  else
+  printf("not a perfect");
 }
