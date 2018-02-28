@@ -1,23 +1,12 @@
+
 #include<stdio.h>
-
-#includem<conio.h>
-
 int main(void)
-
 {
-
-int N;
-
-scanf("%d",&N);
-
-if(N%13==0)
-
-printf("yes");
-
-else
-
-printf("no");
-
-return 0;
-
+	int t;
+	scanf("%d",&t);
+	if(t%13==0)
+	printf("%d is multiple of 13",t);
+	else
+	printf("%d is not multiple of 13",t);
+	return 0;
 }
